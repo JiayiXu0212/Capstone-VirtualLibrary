@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Search for books, IBSN, Authors..."
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="79dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPostalAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:text="Harry Potter"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="This book is at:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Jiayi's Library"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="476dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Grant's Library"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Kyle's Library"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Anthony's Library"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="339dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

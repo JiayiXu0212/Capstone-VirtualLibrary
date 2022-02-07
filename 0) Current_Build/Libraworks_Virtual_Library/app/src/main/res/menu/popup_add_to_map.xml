@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_to_map"
+        android:title="Add This Library to the Map" />
+    <item
+        android:id="@+id/confirm_library"
+        android:title="Confirm This Library Location" />
+    <!--<item
+        android:id="@+id/remove_library"
+        android:title="Remove This Library From the Map" />-->
+
+
+</menu>

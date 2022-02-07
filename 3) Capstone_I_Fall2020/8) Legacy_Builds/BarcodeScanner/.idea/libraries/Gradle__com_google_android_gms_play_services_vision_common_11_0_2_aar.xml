@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-vision-common:11.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d254208ca7947af0ca144b768ed20132/jetified-play-services-vision-common-11.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d254208ca7947af0ca144b768ed20132/jetified-play-services-vision-common-11.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d254208ca7947af0ca144b768ed20132/jetified-play-services-vision-common-11.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1bce25602b4d4a0c7519968d7331993e/jetified-play-services-vision-common-11.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1bce25602b4d4a0c7519968d7331993e/jetified-play-services-vision-common-11.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1bce25602b4d4a0c7519968d7331993e/jetified-play-services-vision-common-11.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,75 @@
+{
+  "project_info": {
+    "project_number": "1073746791080",
+    "firebase_url": "https://deep-beanbag-292817.firebaseio.com",
+    "project_id": "deep-beanbag-292817",
+    "storage_bucket": "deep-beanbag-292817.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073746791080:android:2383b2f58c02193f35509d",
+        "android_client_info": {
+          "package_name": "com.virtuallibrary.libraworks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073746791080-fljkknmr39btvppvkgvbkvj0s2kssuri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPL54JpEiIYXaFf7LeQi4AE0DlMW9_oPE"
+        },
+        {
+          "current_key": "AIzaSyCxD4roxI-vLZ_hOUkmU_XBddtXzkJPimc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073746791080-fljkknmr39btvppvkgvbkvj0s2kssuri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073746791080:android:8e639a25faff9bac35509d",
+        "android_client_info": {
+          "package_name": "com.example.virtuallibrary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073746791080-fljkknmr39btvppvkgvbkvj0s2kssuri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPL54JpEiIYXaFf7LeQi4AE0DlMW9_oPE"
+        },
+        {
+          "current_key": "AIzaSyCxD4roxI-vLZ_hOUkmU_XBddtXzkJPimc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073746791080-fljkknmr39btvppvkgvbkvj0s2kssuri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

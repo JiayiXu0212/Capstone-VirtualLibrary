@@ -1,0 +1,127 @@
+package com.example.libraworks
+
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import com.google.android.gms.maps.model.LatLng
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.*
+
+class UserActivity : AppCompatActivity() {
+
+
+    val getCurrentUserInstance = FirebaseAuth.getInstance().currentUser
+    val currentUserID = getCurrentUserInstance?.uid
+    private val markerArray = ArrayList<Set<Any?>>()
+
+
+    private val getFirebaseInstance = FirebaseDatabase.getInstance()
+    private val sendToFirebaseRef = getFirebaseInstance.getReference("users")
+    val addUsername = findViewById<EditText>(R.id.username)
+    val addHometown = findViewById<EditText>(R.id.hometown)
+    val addFavBook = findViewById<EditText>(R.id.favBook)
+    val addFavGenre = findViewById<EditText>(R.id.favGenre)
+
+
+    //region HelperFunctions
+    override fun onCreate(savedInstanceState: Bundle?) {
+
+        //Hide title bar
+        try {
+            this.supportActionBar!!.hide()
+        } catch (e: NullPointerException) {
+        }
+
+        //Call super and correct screen
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_user)
+
+        val updateProfile = findViewById<Button>(R.id.updateProfileButton)
+        val updateCollection = findViewById<Button>(R.id.personalCollectionButton)
+
+        updateProfile.setOnClickListener(){
+            updateProfile()
+        }
+
+        //addMarkerEventListener(sendToFirebaseRef)
+
+    }
+
+
+    fun updateProfile(){
+
+//        val addUsername = findViewById<EditText>(R.id.username)
+//        val addHometown = findViewById<EditText>(R.id.hometown)
+//        val addFavBook = findViewById<EditText>(R.id.favBook)
+//        val addFavGenre = findViewById<EditText>(R.id.favGenre)
+
+        if (currentUserID != null) {
+            sendToFirebaseRef.child(currentUserID).child("username").setValue(addUsername.text.toString())
+            sendToFirebaseRef.child(currentUserID).child("hometown").setValue(addHometown.text.toString())
+            sendToFirebaseRef.child(currentUserID).child("favorite_book").setValue(addFavBook.text.toString())
+            sendToFirebaseRef.child(currentUserID).child("favorite_genre").setValue(addFavGenre.text.toString())
+        }
+
+    }
+
+    
+    /*
+    //This allows the map to repopulate
+    private fun addMarkerEventListener(markerReference: DatabaseReference) {
+
+        //Create a listener
+        val markerListener = object : ValueEventListener {
+
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+
+                //All of this stuff is for the database
+                val markerObject = dataSnapshot.children
+
+                markerObject.forEach {
+                    var pins = it.key.toString()
+                    val children = it.children
+                    var username = it.child("username").value as String
+                    var hometown = it.child("hometown").value as String
+                    var favBook = it.child("favorite_book").value as String
+                    var favGenre = it.child("favorite_genre").value as String
+                    var userID = it.key
+                    val markerSet: Set<Any?> = setOf(userID, username, hometown, favBook, favGenre)
+                    markerArray.add(markerSet)
+
+                }
+                regenerateMarkers()
+
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+            }
+        }
+        markerReference.addListenerForSingleValueEvent(markerListener)
+
+    }
+
+    //This will regenerate all the markers for the user
+    private fun regenerateMarkers(){
+
+        for(element in markerArray){
+            if(currentUserID == element.elementAt(0)){
+                val usernameRegen: TextView = findViewById(R.id.userTextView)
+                //This is broken
+                usernameRegen.text = element.elementAt(1)
+
+            }
+        }
+    }
+    */
+
+
+
+
+
+
+
+
+    //endregion
+}

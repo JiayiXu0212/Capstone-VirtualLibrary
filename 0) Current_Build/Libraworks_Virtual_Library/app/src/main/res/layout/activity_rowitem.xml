@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <ImageView
+        android:id="@+id/scrollableBookCover"
+        android:layout_width="127dp"
+        android:layout_height="129dp" />
+
+    <TextView
+        android:id="@+id/scrollableBookTotal"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:shadowColor="#121212"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/scrollableBookAva"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/scrollableBookDate"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#000000"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+</LinearLayout>

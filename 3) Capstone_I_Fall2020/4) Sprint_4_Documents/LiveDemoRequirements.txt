@@ -1,0 +1,1 @@
+Start Demo -> Map screen with Google Maps API-> Tap library pin -> Takes you to barcode screen -> Scan barcode -> Return JSON file with OpenLibrary API using ISBN number -> Store that JSON in Firebase when pressing "Check in/out" button." -> End Demo.

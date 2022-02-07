@@ -1,0 +1,2 @@
+Plug your phone into the PC with a USB cable, enable file transfer from your notification shade, dump the "app-debug.APK" from the GitHub directory "APK FILES" into your phones Downloads folder
+From there open the APK on your phone and allow your phone to sideload (it'll auto prompt you.) When the app is open allow camera permissions (itll auto prompt) and then point it at a book barcode
